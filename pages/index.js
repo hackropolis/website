@@ -16,10 +16,16 @@ export default function Home() {
         <h2>The first virtual hackerspace in Greece</h2>
         <p className={styles.description}>
           <b>Making stuff on your own kinda sucks.</b> <br />
-          We're a virtual club (member of <a>The Hack Foundation</a>), where
-          like-minded students from every edge of Greece (<i>and beyond</i>)
-          meet weekly to discuss about topics they are interested in, build
-          stuff they like and learn together.
+          We're a virtual club (member of{" "}
+          <a
+            href="https://hackclub.com/?utm_source=hackropolis.now.app&utm_medium=linkback&utm_campaign=hackropolis"
+            target="_blank"
+          >
+            The Hack Foundation
+          </a>
+          ), where like-minded students from every edge of Greece (
+          <i>and beyond</i>) meet weekly to discuss about topics they are
+          interested in, build stuff they like and learn together.
         </p>
         <div className={styles.links}>
           <a>
