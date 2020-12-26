@@ -1,0 +1,7 @@
+{
+	"redirects": [
+		{ "source": "/join", "destination": "https://airtable.com/shrmemSR13178BeFg" },
+		{ "source": "/discord", "destination": "https://discord.gg/6DWdVYpEzf" },
+		{ "source": "/matrix", "destination": "https://matrix.to/#/#hackropolis:livid.pw" }
+	]
+}
