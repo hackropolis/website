@@ -22,7 +22,7 @@ export default function Home() {
 					), where like-minded students from every edge of Greece (<i>and beyond</i>) meet weekly to discuss about topics they are
 					interested in, build stuff they like and learn together.
 				</p>
-				<div className={styles.links} style={{ color: 'lightgray' }}>
+				<div className={styles.links}>
 					<a href="https://hackropolis.club" target="_blank">
 						<b>
 							<u>Join us &rarr;</u>
@@ -40,11 +40,13 @@ export default function Home() {
 							<u>View our GitHub &rarr;</u>
 						</b>
 					</a>
+					<br />
 					<a href="https://hackropolis.club/discord" target="_blank">
 						<b>
 							<u>Hop on our Discord &rarr;</u>
 						</b>
-					</a>
+					</a>{' '}
+					<br />
 					<a href="https://hackropolis.club/matrix" target="_blank">
 						<b>
 							<u>Visit our Matrix &rarr;</u>
