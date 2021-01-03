@@ -12,7 +12,7 @@ export default function Home() {
 				<h1 className={styles.title}>
 					We are <u>Hackropolis</u>
 				</h1>
-				<h2>The first virtual hackerspace in Greece</h2>
+				<h2 className={styles.slogan}>The first virtual hackerspace in Greece</h2>
 				<p className={styles.description}>
 					<b>Let's be honest: making stuff alone kinda sucks.</b> <br />
 					We're a virtual club (member of{' '}
@@ -28,31 +28,46 @@ export default function Home() {
 				</p>
 				<div className={styles.links}>
 					<h3>Get involved:</h3>
+					<ul className={styles.list}>
+						<li>
 							<a href="https://hackropolis.club/apply" target="_blank" rel="noopener">
 						<b>
 							<u>Join us &rarr;</u>
 						</b>
 					</a>
+						</li>
+						<li>
 							<a href="https://twitter.com/hackropolis" target="_blank" rel="noopener">
 						<b>
 							<u>Take a look at our Twitter &rarr;</u>
 						</b>
 					</a>
+						</li>
+						<li>
 							<a href="https://github.com/hackropolis" target="_blank" rel="noopener">
 						<b>
 							<u>View our GitHub &rarr;</u>
 						</b>
 					</a>
+						</li>
+					</ul>
 					<h3>Get in touch:</h3>
+					<ul className={styles.list}>
+						<li>
 							<a href="https://hackropolis.club/discord" target="_blank" rel="noopener">
 						<b>
 							<u>Hop on our Discord &rarr;</u>
 						</b>
+							</a>
+						</li>
+						<li>
 							<a href="https://hackropolis.club/matrix" target="_blank" rel="noopener">
 						<b>
 							<u>Visit our Matrix &rarr;</u>
 						</b>
 					</a>
+						</li>
+					</ul>
 				</div>
 			</main>
 
