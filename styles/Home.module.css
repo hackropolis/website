@@ -49,7 +49,7 @@
 
 .title {
 	margin: 0;
-	padding: 0 2.5rem;
+	padding: 2.5rem 2.5rem 0 2.5rem;
 	text-align: left;
 	line-height: 1.15;
 	font-size: 4rem;
@@ -79,6 +79,24 @@
 	margin-bottom: 8px;
 }
 
+.sponsors {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	justify-content: center;
+	padding-top: 2.5rem;
+}
+
+.sponsors > ul {
+	column-count: 3;
+	column-gap: 0px;
+}
+
+.sponsors > ul > li {
+	width: max-content;
+}
+
 @media (prefers-color-scheme: dark) {
 	.container {
 		color: var(--text-dark);
@@ -86,9 +104,9 @@
 	}
 }
 
-@media (max-width: 814px) {
-	.extra {
-		flex-direction: column;
+@media (max-width: 907px) {
+	.sponsors > ul {
+		column-count: 2;
 	}
 }
 
@@ -104,7 +122,6 @@
 
 	.title {
 		font-size: 2.5rem;
-		padding: 2.5rem 2.5rem 0 2.5rem;
 	}
 
 	.main {
@@ -131,6 +148,10 @@
 	.links {
 		text-align: left;
 		font-size: 1rem;
+	}
+
+	.sponsors > ul {
+		column-count: 1;
 	}
 
 	.description {

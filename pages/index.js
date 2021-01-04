@@ -42,8 +42,16 @@ export default function Home() {
 						you need is an internet connection, come as you are!
 					</p>
 					<p>
-						We mostly consist of middle-to-high school students and operate under the auspices of Hack Club (which is a registered
-						501(c)(3) nonprofit organization in California, United States), which supports similar acts like ours internationally.
+						We mostly consist of middle-to-high school students and operate under the auspices of{' '}
+						<a
+							href="https://hackclub.com/?utm_source=hackropolis.vercel.app&utm_medium=linkback&utm_campaign=hackropolis"
+							target="_blank"
+							rel="noopener"
+						>
+							The Hack Foundation
+						</a>{' '}
+						(which is a registered 501(c)(3) nonprofit organization in California, United States), which supports similar acts like ours
+						internationally.
 					</p>
 					<p>
 						Our goal is to provide people with an inclusive space where they can be themselves, no matter whether they live. We want to
@@ -103,9 +111,11 @@ export default function Home() {
 						</li>
 					</ul>
 				</div>
-				<div className={styles.sponsors}>
-					<h3>We're sponsored by:</h3>
-					<div className={styles.grid}>
+			</div>
+			<div className={styles.sponsors}>
+				<h3>We're sponsored by:</h3>
+				<ul className={styles.list}>
+					<li>
 						<a
 							href="https://www.stickermule.com/unlock?ref_id=5157172701&utm_medium=link&utm_source=invite"
 							target="_blank"
@@ -113,8 +123,8 @@ export default function Home() {
 						>
 							<img src="/sponsors/sticker-mule.svg" alt="Sticker Mule Logo" width="300px" height="100px" />
 						</a>
-					</div>
-				</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 	);
