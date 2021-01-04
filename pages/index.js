@@ -5,6 +5,7 @@ export default function Home() {
 	return (
 		<div className={styles.container}>
 			<Head>
+				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 				<title>Hackropolis</title>
 				<meta name="description" content="The first virtual computer club for youths in Greece" />
 				<link rel="icon" href="/favicon.ico" />
@@ -24,27 +25,39 @@ export default function Home() {
 				<meta name="twitter:image" content="https://hackropolis.club/logo.png" />
 				<link rel="canonical" href="https://hackropolis.club/" />
 			</Head>
-			<h1 className={styles.title}>
-				We are <u>Hackropolis</u>
-			</h1>
-			<main className={styles.main}>
+			<div className={styles.header}>
+				<h1 className={styles.title}>
+					We are <u>Hackropolis</u>
+				</h1>
 				<h2 className={styles.slogan}>The first virtual computer club for youths in Greece</h2>
-				<p className={styles.description}>Are you interested in computer science?</p>
-				<p className={styles.description}>
-					Hackropolis is a virtual computer club for Greek and/or Greek-speaking young people that are interested in computer science and
-					other related fields. We regularly organize meetings online and work on projects together. No experience required — all you need
-					is an internet connection, come as you are!
-				</p>
-				<p className={styles.description}>
-					We mostly consist of middle-to-high school students and operate under the auspices of Hack Club (which is a registered 501(c)(3)
-					nonprofit organization in California, United States), which supports similar acts like ours internationally.
-				</p>
-				<p className={styles.description}>
-					Our goal is to provide people with an inclusive space where they can be themselves, no matter whether they live. We want to show
-					that computers and technology can be fun, exciting, and a means of personal development and expression.
-				</p>
+			</div>
+			<main className={styles.main}>
+				<article className={styles.description}>
+					<p>
+						<b>Are you interested in computer science?</b>
+					</p>
+					<p>
+						Hackropolis is a virtual computer club for Greek and/or Greek-speaking young people that are interested in computer science
+						and other related fields. We regularly organize meetings online and work on projects together. No experience required — all
+						you need is an internet connection, come as you are!
+					</p>
+					<p>
+						We mostly consist of middle-to-high school students and operate under the auspices of Hack Club (which is a registered
+						501(c)(3) nonprofit organization in California, United States), which supports similar acts like ours internationally.
+					</p>
+					<p>
+						Our goal is to provide people with an inclusive space where they can be themselves, no matter whether they live. We want to
+						show that computers and technology can be fun, exciting, and a means of personal development and expression.
+					</p>
+					<p>
+						Intrigued?{' '}
+						<a href="https://hackropolis.club/apply" target="_blank" rel="noopener">
+							<b>Apply today!</b>
+						</a>
+					</p>
+				</article>
 			</main>
-			<div className={styles.secondary}>
+			<div className={styles.extra}>
 				<div className={styles.links}>
 					<h3>Need to know more?</h3>
 					<ul className={styles.list}>
@@ -63,7 +76,9 @@ export default function Home() {
 							</a>
 						</li>
 					</ul>
-					<h3>Want to join us?</h3>
+				</div>
+				<div className={styles.links}>
+					<h3>Want to reach out?</h3>
 					<ul className={styles.list}>
 						<li>
 							<a href="https://hackropolis.club/apply" target="_blank" rel="noopener">
@@ -75,14 +90,14 @@ export default function Home() {
 						<li>
 							<a href="https://hackropolis.club/discord" target="_blank" rel="noopener">
 								<b>
-									<u>Hop on our Discord &rarr;</u>
+									<u>Hop on our Discord</u>
 								</b>
 							</a>
 						</li>
 						<li>
 							<a href="https://hackropolis.club/matrix" target="_blank" rel="noopener">
 								<b>
-									<u>Visit our Matrix &rarr;</u>
+									<u>Visit our Matrix</u>
 								</b>
 							</a>
 						</li>

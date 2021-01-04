@@ -13,3 +13,10 @@ a {
 * {
 	box-sizing: border-box;
 }
+
+:root {
+	--text-light: #000000;
+	--bg-light: #ffffff;
+	--text-dark: #ffffff;
+	--bg-dark: #000000;
+}
