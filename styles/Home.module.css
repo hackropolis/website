@@ -150,6 +150,12 @@
 		font-size: 1rem;
 	}
 
+	.sponsors {
+		text-align: left;
+		margin: 0;
+		padding: 0 2.5rem 2.5rem 2.5rem;
+	}
+
 	.sponsors > ul {
 		column-count: 1;
 	}
