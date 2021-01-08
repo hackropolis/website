@@ -1,7 +1,13 @@
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+	const [vercelUrl, setVercelUrl] = useState('/sponsors/vercel-dark.svg')
+	useEffect(() => {
+		if (window.matchMedia('(prefers-color-scheme: dark)')) setVercelUrl('/sponsors/vercel-light.svg');
+	}, []);
+
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -44,14 +50,13 @@ export default function Home() {
 					<p>
 						We mostly consist of middle-to-high school students and operate under the auspices of{' '}
 						<a
-							href="https://hackclub.com/?utm_source=hackropolis.vercel.app&utm_medium=linkback&utm_campaign=hackropolis"
+							href="https://hackclub.com/?utm_source=hackropolis.club&utm_medium=linkback&utm_campaign=hackropolis"
 							target="_blank"
 							rel="noopener"
 						>
 							The Hack Foundation
 						</a>{' '}
-						(a registered 501(c)(3) nonprofit organization in California, United States), which supports similar acts like ours
-						globally.
+						(a registered 501(c)(3) nonprofit organization in California, United States), which supports similar acts like ours globally.
 					</p>
 					<p>
 						Our goal is to provide people with an inclusive space where they can be themselves, no matter whether they live. We want to
@@ -122,6 +127,16 @@ export default function Home() {
 							rel="noopener"
 						>
 							<img src="/sponsors/sticker-mule.svg" alt="Sticker Mule Logo" width="300px" height="100px" />
+						</a>
+					</li>
+					<li>
+						<a href="https://vercel.com?utm_source=hackropolis&utm_campaign=oss&utm_medium=link" target="_blank" rel="noopener">
+							<img
+								src={vercelUrl}
+								alt="Vercel"
+								width="300px"
+								height="75px"
+							/>
 						</a>
 					</li>
 				</ul>
