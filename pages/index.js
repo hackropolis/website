@@ -51,7 +51,7 @@ export default function Home() {
 							The Hack Foundation
 						</a>{' '}
 						(a registered 501(c)(3) nonprofit organization in California, United States), which supports similar acts like ours
-						internationally.
+						globally.
 					</p>
 					<p>
 						Our goal is to provide people with an inclusive space where they can be themselves, no matter whether they live. We want to
@@ -105,7 +105,7 @@ export default function Home() {
 						<li>
 							<a href="https://hackropolis.club/matrix" target="_blank" rel="noopener">
 								<b>
-									<u>Visit our Matrix</u>
+									<u>Visit our Matrix room</u>
 								</b>
 							</a>
 						</li>
