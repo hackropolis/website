@@ -1,13 +1,7 @@
 import Head from 'next/head';
-import { useEffect, useState } from 'react';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
-	const [vercelUrl, setVercelUrl] = useState('/sponsors/vercel-dark.svg')
-	useEffect(() => {
-		if (window.matchMedia('(prefers-color-scheme: dark)')) setVercelUrl('/sponsors/vercel-light.svg');
-	}, []);
-
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -131,12 +125,10 @@ export default function Home() {
 					</li>
 					<li>
 						<a href="https://vercel.com?utm_source=hackropolis&utm_campaign=oss&utm_medium=link" target="_blank" rel="noopener">
-							<img
-								src={vercelUrl}
-								alt="Vercel"
-								width="300px"
-								height="75px"
-							/>
+							<picture>
+								<source srcSet="/sponsors/vercel-light.svg" media="(prefers-color-scheme: dark)" />
+								<img alt="Vercel Logo" src="/sponsors/vercel-dark.svg" />
+							</picture>
 						</a>
 					</li>
 				</ul>
