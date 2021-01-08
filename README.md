@@ -27,4 +27,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 # Special thanks
 
-This project is sponsored by [![Vercel](https://raw.githubusercontent.com/hackropolis/website/main/.github/readme-assets/vercel.png)](https://vercel.com?utm_source=hackropolis&utm_campaign=oss&utm_medium=link), which provides our hosting. 
+This project is powered by
+
+[![Vercel](https://raw.githubusercontent.com/hackropolis/website/main/public/sponsors/vercel-dark.svg)](https://vercel.com?utm_source=hackropolis&utm_campaign=oss&utm_medium=link)
