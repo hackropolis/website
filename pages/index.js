@@ -50,7 +50,7 @@ export default function Home() {
 						>
 							The Hack Foundation
 						</a>{' '}
-						(which is a registered 501(c)(3) nonprofit organization in California, United States), which supports similar acts like ours
+						(a registered 501(c)(3) nonprofit organization in California, United States), which supports similar acts like ours
 						internationally.
 					</p>
 					<p>
