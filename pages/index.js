@@ -25,6 +25,7 @@ export default function Home() {
 				<meta property="og:image" content="https://hackropolis.club/logo.png" />
 				<meta name="twitter:image" content="https://hackropolis.club/logo.png" />
 				<link rel="canonical" href="https://hackropolis.club/" />
+				<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "46d832bfd8db4fefadafda69bd7e6b0e"}'></script>
 			</Head>
 			<div className={styles.header}>
 				<h1 className={styles.title}>
