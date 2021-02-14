@@ -58,7 +58,7 @@ function Home({ t }) {
 							target="_blank"
 							rel="noopener"
 						>
-							{t('hackClub')}
+							The Hack Foundation
 						</a>{' '}
 						{t('nonProfit')}
 					</p>
