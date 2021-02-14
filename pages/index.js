@@ -1,23 +1,28 @@
 import Head from 'next/head';
+import { withTranslation, i18n } from '../i18n'
 import styles from '../styles/Home.module.css';
 
-export default function Home() {
+const translationMenu = {
+	en: "English",
+	el: "Ελληνικά"
+}
+
+function Home({ t }) {
 	return (
 		<div className={styles.container}>
-			<html lang="en-US" />
 			<Head>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 				<title>Hackropolis</title>
-				<meta name="description" content="The first virtual (teenage) Greek computer club" />
+				<meta name="description" content={t('slogan')} />
 				<link rel="icon" href="/favicon.ico" />
 				<meta name="theme-color" content="#ffffff" />
 				<meta property="og:type" content="website" />
 				<meta name="og:title" property="og:title" content="Hackropolis" />
-				<meta name="og:description" property="og:description" content="The first virtual (teenage) Greek computer club" />
+				<meta name="og:description" property="og:description" content={t('slogan')} />
 				<meta property="og:url" content="https://hackropolis.club/" />
 				<meta name="twitter:card" content="summary" />
 				<meta name="twitter:title" content="Hackropolis" />
-				<meta name="twitter:description" content="The first virtual (teenage) Greek computer club" />
+				<meta name="twitter:description" content={t('slogan')} />
 				<meta name="twitter:site" content="@hackropolis" />
 				<meta name="twitter:creator" content="@hackropolis" />
 				<link rel="icon" type="image/png" href="/favicon.ico" />
@@ -27,86 +32,88 @@ export default function Home() {
 				<link rel="canonical" href="https://hackropolis.club/" />
 				<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "46d832bfd8db4fefadafda69bd7e6b0e"}'></script>
 			</Head>
+			<div className={styles.langMenu}>
+				{Object.entries(translationMenu).map(([language, name]) => {
+					return i18n.language === language ? "" : <span key={language} onClick={() => i18n.changeLanguage(language)}>{name}</span>
+				})}
+			</div>
 			<div className={styles.header}>
 				<h1 className={styles.title}>
-					We are <u>Hackropolis</u>
+					{t('titlePrefix')} <u>Hackropolis</u>
 				</h1>
-				<h2 className={styles.slogan}>The first (teenage) Greek virtual computer club</h2>
+				<h2 className={styles.slogan}>{t('slogan')}</h2>
 			</div>
 			<main className={styles.main}>
 				<article className={styles.description}>
 					<p>
-						<b>Do computers fascinate you?</b>
+						<b>{t('articleQuestion')}</b>
 					</p>
 					<p>
-						Hackropolis is a virtual computer club for Greek and/or Greek-speaking young people that are interested in computer science
-						and other related fields. We regularly organize meetings online and work on projects together. No experience required — all
-						you need is an internet connection, come as you are!
+						{t('description')}
 					</p>
 					<p>
-						We mostly consist of middle-to-high school students and operate under the auspices of{' '}
+						{t('operateUnder')}{' '}
 						<a
 							href="https://hackclub.com/?utm_source=hackropolis.club&utm_medium=linkback&utm_campaign=hackropolis"
 							target="_blank"
 							rel="noopener"
 						>
-							The Hack Foundation
+							{t('hackClub')}
 						</a>{' '}
-						(a registered 501(c)(3) nonprofit organization in California, United States), which supports similar acts like ours globally.
+						{t('nonProfit')}
 					</p>
 					<p>
-						Our goal is to provide people with an inclusive space where they can be themselves, no matter where they live. We want to
-						show that computers and technology can be fun, exciting, and a means of personal development and expression.
+						{t('goalsAndDreams')}
 					</p>
 					<p>
-						Intrigued?{' '}
+						{t('closingQuestion')}{' '}
 						<a href="https://hackropolis.club/apply" target="_blank" rel="noopener">
-							<b>Join us!</b>
+							<b>{t('btnJoinUs')}</b>
 						</a>
 					</p>
 				</article>
 			</main>
 			<div className={styles.extra}>
 				<div className={styles.links}>
-					<h3>Learn more</h3>
+					<h3>{t('extraHeader')}</h3>
 					<ul className={styles.list}>
 						<li>
 							<a href="https://twitter.com/hackropolis" target="_blank" rel="noopener">
 								<b>
-									<u>Check out our feed on Twitter</u>
+									<u>{t('twitter')}</u>
 								</b>
 							</a>
 						</li>
 						<li>
 							<a href="https://github.com/hackropolis" target="_blank" rel="noopener">
 								<b>
-									<u>Check out our projects on GitHub</u>
+									<u>{t('github')}</u>
 								</b>
 							</a>
 						</li>
 					</ul>
 				</div>
 				<div className={styles.links}>
-					<h3>Reach out to us!</h3>
+					<h3>{t('linksHeader')}</h3>
 					<ul className={styles.list}>
 						<li>
 							<a href="https://hackropolis.club/apply" target="_blank" rel="noopener">
 								<b>
-									<u>Apply</u>
+									<u>{t('apply')}</u>
 								</b>
 							</a>
 						</li>
 						<li>
 							<a href="https://hackropolis.club/discord" target="_blank" rel="noopener">
 								<b>
-									<u>Hop on our Discord</u>
+									<u>{t('discord')}</u>
 								</b>
 							</a>
 						</li>
 						<li>
 							<a href="https://hackropolis.club/matrix" target="_blank" rel="noopener">
 								<b>
-									<u>Enter our Matrix room</u>
+									<u>{t('matrix')}</u>
 								</b>
 							</a>
 						</li>
@@ -114,7 +121,7 @@ export default function Home() {
 				</div>
 			</div>
 			<div className={styles.sponsors}>
-				<h3>We're sponsored by:</h3>
+				<h3>{t('sponsors')}</h3>
 				<ul className={styles.list}>
 					<li>
 						<a
@@ -138,3 +145,9 @@ export default function Home() {
 		</div>
 	);
 }
+
+Home.getInitialProps = async () => ({
+	namespacesRequired: ['common'],
+})
+
+export default withTranslation('common')(Home)

@@ -7,6 +7,17 @@
 	justify-content: center;
 }
 
+.langMenu {
+	padding-top: 1.0rem;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.langMenu > span {
+	padding: 0 10px;
+}
+
 .header {
 	margin: 0 auto;
 }
@@ -49,7 +60,7 @@
 
 .title {
 	margin: 0;
-	padding: 2.5rem 2.5rem 0 2.5rem;
+	padding: 1.5rem 2.5rem 0 2.5rem;
 	text-align: left;
 	line-height: 1.15;
 	font-size: 4rem;
@@ -118,6 +129,10 @@
 		justify-content: center;
 		align-items: flex-start;
 		overflow-x: hidden;
+	}
+
+	.langMenu {
+		padding-left: 2.5rem;
 	}
 
 	.title {
