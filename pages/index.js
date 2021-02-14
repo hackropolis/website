@@ -3,8 +3,8 @@ import { withTranslation, i18n } from '../i18n'
 import styles from '../styles/Home.module.css';
 
 const translationMenu = {
-	en: "English",
-	el: "Ελληνικά"
+	en: "In English",
+	el: "Στα Ελληνικά"
 }
 
 function Home({ t }) {
