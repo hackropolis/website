@@ -75,7 +75,7 @@ function Home({ t }) {
 			</main>
 			<div className={styles.extra}>
 				<div className={styles.links}>
-					<h3>{t('extraHeader')}</h3>
+					<h3>{t('learnHeader')}</h3>
 					<ul className={styles.list}>
 						<li>
 							<a href="https://twitter.com/hackropolis" target="_blank" rel="noopener">
@@ -94,7 +94,7 @@ function Home({ t }) {
 					</ul>
 				</div>
 				<div className={styles.links}>
-					<h3>{t('linksHeader')}</h3>
+					<h3>{t('contactHeader')}</h3>
 					<ul className={styles.list}>
 						<li>
 							<a href="https://hackropolis.club/apply" target="_blank" rel="noopener">
