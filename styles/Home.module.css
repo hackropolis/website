@@ -10,12 +10,12 @@
 .langMenu {
 	padding-top: 1.0rem;
 	text-align: center;
-	cursor: pointer;
 	font-weight: bold;
 }
 
 .langMenu > span {
 	padding: 0 10px;
+	cursor: pointer;
 }
 
 .header {
