@@ -8,16 +8,16 @@ export default function Home() {
 			<Head>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 				<title>Hackropolis</title>
-				<meta name="description" content="The first virtual computer club for youths in Greece" />
+				<meta name="description" content="The first virtual (teenage) Greek computer club" />
 				<link rel="icon" href="/favicon.ico" />
 				<meta name="theme-color" content="#ffffff" />
 				<meta property="og:type" content="website" />
 				<meta name="og:title" property="og:title" content="Hackropolis" />
-				<meta name="og:description" property="og:description" content="The first virtual computer club for youths in Greece" />
+				<meta name="og:description" property="og:description" content="The first virtual (teenage) Greek computer club" />
 				<meta property="og:url" content="https://hackropolis.club/" />
 				<meta name="twitter:card" content="summary" />
 				<meta name="twitter:title" content="Hackropolis" />
-				<meta name="twitter:description" content="The first virtual computer club for youths in Greece" />
+				<meta name="twitter:description" content="The first virtual (teenage) Greek computer club" />
 				<meta name="twitter:site" content="@hackropolis" />
 				<meta name="twitter:creator" content="@hackropolis" />
 				<link rel="icon" type="image/png" href="/favicon.ico" />
@@ -31,12 +31,12 @@ export default function Home() {
 				<h1 className={styles.title}>
 					We are <u>Hackropolis</u>
 				</h1>
-				<h2 className={styles.slogan}>The first virtual computer club for youths in Greece</h2>
+				<h2 className={styles.slogan}>The first (teenage) Greek virtual computer club</h2>
 			</div>
 			<main className={styles.main}>
 				<article className={styles.description}>
 					<p>
-						<b>Are you interested in computer science?</b>
+						<b>Do computers fascinate you?</b>
 					</p>
 					<p>
 						Hackropolis is a virtual computer club for Greek and/or Greek-speaking young people that are interested in computer science
@@ -55,20 +55,20 @@ export default function Home() {
 						(a registered 501(c)(3) nonprofit organization in California, United States), which supports similar acts like ours globally.
 					</p>
 					<p>
-						Our goal is to provide people with an inclusive space where they can be themselves, no matter whether they live. We want to
+						Our goal is to provide people with an inclusive space where they can be themselves, no matter where they live. We want to
 						show that computers and technology can be fun, exciting, and a means of personal development and expression.
 					</p>
 					<p>
 						Intrigued?{' '}
 						<a href="https://hackropolis.club/apply" target="_blank" rel="noopener">
-							<b>Apply today!</b>
+							<b>Join us!</b>
 						</a>
 					</p>
 				</article>
 			</main>
 			<div className={styles.extra}>
 				<div className={styles.links}>
-					<h3>Need to know more?</h3>
+					<h3>Learn more</h3>
 					<ul className={styles.list}>
 						<li>
 							<a href="https://twitter.com/hackropolis" target="_blank" rel="noopener">
@@ -87,7 +87,7 @@ export default function Home() {
 					</ul>
 				</div>
 				<div className={styles.links}>
-					<h3>Want to reach out?</h3>
+					<h3>Reach out to us!</h3>
 					<ul className={styles.list}>
 						<li>
 							<a href="https://hackropolis.club/apply" target="_blank" rel="noopener">
@@ -106,7 +106,7 @@ export default function Home() {
 						<li>
 							<a href="https://hackropolis.club/matrix" target="_blank" rel="noopener">
 								<b>
-									<u>Visit our Matrix room</u>
+									<u>Enter our Matrix room</u>
 								</b>
 							</a>
 						</li>
