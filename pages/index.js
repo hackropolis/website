@@ -4,7 +4,8 @@ import styles from '../styles/Home.module.css';
 
 const translationMenu = {
 	en: "In English",
-	el: "Στα Ελληνικά"
+	el: "Στα Ελληνικά",
+	'nb-NO': "På Norsk (bokmål)"
 }
 
 function Home({ t }) {

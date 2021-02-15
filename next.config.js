@@ -1,7 +1,8 @@
 const { nextI18NextRewrites } = require('next-i18next/rewrites')
 
 const localeSubpaths = {
-    el: 'gr'
+    el: 'gr',
+    'nb-NO': 'no'
   }
 
 module.exports = {
