@@ -15,5 +15,8 @@
 	"apply": "Lag en søknad til å bli med",
 	"discord": "Hopp på Discorden våres",
 	"matrix": "Bli med i våres Matrix rom",
-	"sponsors": "Vi er sponset av:"
+	"sponsors": "Vi er sponset av:",
+	"theme": "Switch theme to",
+	"darkTheme": "dark",
+	"lightTheme": "light"
 }

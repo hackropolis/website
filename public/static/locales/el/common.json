@@ -15,5 +15,8 @@
 	"apply": "Εγγραφή",
 	"discord": "Βρες μας στο Discord",
 	"matrix": "Μπες στο δωματιό μας στο Matrix",
-	"sponsors": "Οι χορηγοί μας:"
+	"sponsors": "Οι χορηγοί μας:",
+	"theme": "Αλλαγή θέματος σε ",
+	"darkTheme": "σκοτεινό",
+	"lightTheme": "φωτεινό"
 }
