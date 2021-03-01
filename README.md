@@ -1,6 +1,6 @@
 # hackropolis.club - the club website
 
-This is our clubs website, built with [Next.js](https://nextjs.org/) and deployed on [Vercel](https://vercel.com?utm_source=hackropolis&utm_campaign=oss&utm_medium=link)
+This is our club's website, built with [Next.js](https://nextjs.org/) and deployed on [Vercel](https://vercel.com?utm_source=hackropolis&utm_campaign=oss&utm_medium=link)
 
 ## Getting Started with development
 
