@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import { withTranslation, i18n } from '../i18n'
 import styles from '../styles/Home.module.css';
+import DarkModeToggle from "./DarkMode.js";
+
 
 const translationMenu = {
 	en: "In English",
@@ -34,6 +36,7 @@ function Home({ t }) {
 				<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "46d832bfd8db4fefadafda69bd7e6b0e"}'></script>
 			</Head>
 			<div className={styles.langMenu}>
+				<DarkModeToggle />
 				{Object.entries(translationMenu).map(([language, name]) => {
 					return i18n.language === language ? "" : <span key={language} onClick={() => i18n.changeLanguage(language)}>{name}</span>
 				})}
