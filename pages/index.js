@@ -31,6 +31,7 @@ function Home({ t }) {
 				<meta property="og:image" content="https://hackropolis.club/logo.png" />
 				<meta name="twitter:image" content="https://hackropolis.club/logo.png" />
 				<link rel="canonical" href="https://hackropolis.club/" />
+				<meta name="have-i-been-pwned-verification" value="78db0165088cbec8641511172a59529c" />
 				<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "46d832bfd8db4fefadafda69bd7e6b0e"}'></script>
 			</Head>
 			<div className={styles.langMenu}>
