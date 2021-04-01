@@ -41,7 +41,7 @@ function Home({ t }) {
 			</div>
 			<div className={styles.header}>
 				<h1 className={styles.title}>
-					{t('titlePrefix')} <u>Hackropolis</u>
+					{t('titlePrefix')} <u>Heckropolis</u>
 				</h1>
 				<h2 className={styles.slogan}>{t('slogan')}</h2>
 			</div>
