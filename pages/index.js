@@ -13,7 +13,7 @@ function Home({ t }) {
 		<div className={styles.container}>
 			<Head>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-				<title>Hackropolis</title>
+				<title>Heckropolis</title>
 				<meta name="description" content={t('slogan')} />
 				<link rel="icon" href="/favicon.ico" />
 				<meta name="theme-color" content="#ffffff" />
