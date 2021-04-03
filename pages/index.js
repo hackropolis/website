@@ -13,7 +13,7 @@ function Home({ t }) {
 		<div className={styles.container}>
 			<Head>
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
-				<title>Heckropolis</title>
+				<title>Hackropolis</title>
 				<meta name="description" content={t('slogan')} />
 				<link rel="icon" href="/favicon.ico" />
 				<meta name="theme-color" content="#ffffff" />
@@ -41,7 +41,7 @@ function Home({ t }) {
 			</div>
 			<div className={styles.header}>
 				<h1 className={styles.title}>
-					{t('titlePrefix')} <u>Heckropolis</u>
+					{t('titlePrefix')} <u>Hackropolis</u>
 				</h1>
 				<h2 className={styles.slogan}>{t('slogan')}</h2>
 			</div>
