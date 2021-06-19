@@ -15,5 +15,8 @@
 	"apply": "Apply",
 	"discord": "Hop on our Discord",
 	"matrix": "Enter our Matrix room",
-	"sponsors": "We're sponsored by:"
+	"sponsors": "We're sponsored by:",
+	"theme": "Switch theme to",
+	"darkTheme": "dark",
+	"lightTheme": "light"
 }

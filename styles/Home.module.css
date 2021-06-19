@@ -2,8 +2,8 @@
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
-	color: var(--text-light);
-	background-color: var(--bg-light);
+	color: var(--color);
+	background-color: var(--background-color);
 	justify-content: center;
 }
 
